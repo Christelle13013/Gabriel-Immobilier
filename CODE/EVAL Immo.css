@@ -1,0 +1,273 @@
+
+
+body {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hr {
+    color: #a54657;
+    border: solid #a54657;
+}
+/************************************HEADER**********************************************/
+
+.header {
+    background: url("IMAGES/photoENTETE0.jpeg") center center;
+    background-size: 100%;
+    min-height: 150px;
+    max-height: 400px;
+
+}
+
+.nom {
+    text-align: center;
+    color: black;
+    
+}
+.valeurs {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+/***********************************FIN HEADER*******************************************/
+
+.navbar {
+    list-style: none;
+    display: inline;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width:2000px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 320px) {
+    .navbar {
+        display: flex;
+        flex-direction: col;
+        justify-content: space-evenly;
+    }
+}
+
+/************************************NAVBAR***********************************************/
+
+.bar {
+    color: black;
+    text-decoration: none;
+}
+.bar1 {
+    font-weight: bold;
+    color: #a54657;
+    text-decoration: underline;
+}
+
+
+/**********************************FIN NAVBAR********************************************/
+
+.localisation {
+    color: #042e5c;
+}
+.photoPRINC {
+    display: flex;
+    width: 98%;
+    height: 98%;
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20 20px;
+
+}
+.img {
+    width: 90px;
+    border: solid #042e5c;
+    border-radius: 15px;
+}
+
+/************************************CARCTERISTIQUES**********************************/
+
+.caracteristiques {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    line-height: 1,5px;
+    padding-left: 0;
+    /*flex-direction: col;
+    justify-content: space-evenly;**/
+
+}
+
+.caracteristiques li {
+    margin: 6px;
+}
+
+.caracteristique {
+    color: #042e5c;
+}
+.annonces {
+    text-align: center;
+    color: #a54657;
+    
+}
+.annonce {
+    color: #042e5c;
+}
+.img_cara {
+    width: 30px;
+    height: 30px;
+    
+}
+.detail {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.IMGsupl {
+    display: flex;
+    justify-content: center;
+    margin: 5%
+}
+/*******************************BOUTON**********************************/
+
+.button2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+
+.favoritestyled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #a54657;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.favoritestyled:hover {
+    background-color: #a54657;
+}
+
+.favoritestyled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+/***************************************FIN BOUTON***********************/
+
+/***************************************formulaire***********************/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    
+    
+}
+
+.button {
+    background-color: #a54657;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    max-width: 120px;
+    border-radius: 10%;
+}
+
+.input {
+    margin: 5px 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 10px 5px 5px #bbd;
+}
+
+.message {
+    height: 150px;
+    border: none;
+    margin: 5px 0;
+}
+.bout {
+    max-width: 20px;
+}
+
+/**************************FIN FORMULAIRE*******************************/
+
+.coordonnées {
+    display: flex;
+    justify-content: space-between;
+    color: #ddb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.NOMIMM {
+    font-weight: bold;
+    color: #ddb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tel {
+    display: flex;
+    justify-content: end;
+    font-weight: bold;
+    color: #ddb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bloc {
+    background-color: #042e5c;
+    border-radius: %;
+
+}
+
+/********************************RESPONSIVE***************************/
+
+@media screen and (min-width: 500px) {
+    header {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width:520px) {
+    .ann-SIMILAIRE {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .ann-SIMILAIRE img {
+    margin-left: 3%;
+        width: 33%;
+}
+}
+
+@media screen and (min-width:620px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+@media screen and (min-width: 620px) {
+    .img {
+        
+    }
+}
+
+    
